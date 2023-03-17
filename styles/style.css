@@ -1,0 +1,129 @@
+#header_bg {
+  background-color: #eee;
+}
+#header_bg header {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: aqua;
+  height: 70px;
+}
+#header_bg header nav {
+  background: yellow;
+}
+#header_bg header nav a {
+  margin-left: 16px;
+}
+#header_bg header nav a:first-child {
+  margin: 0;
+}
+
+#slide_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+#slide_wrap .slide_container .slide {
+  display: none;
+}
+#slide_wrap .slide_container .slide1 {
+  display: block;
+}
+#slide_wrap .prev, #slide_wrap .next {
+  position: absolute;
+}
+#slide_wrap .prev {
+  left: 20px;
+  top: 45%;
+}
+#slide_wrap .next {
+  right: 20px;
+  top: 45%;
+}
+#slide_wrap .pagenation {
+  background: brown;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+#slide_wrap .pagenation a {
+  background: #ccc;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+#slide_wrap .pagenation a.active {
+  background: #fff;
+}
+#slide_wrap a:first-child {
+  margin: 0;
+}
+
+#gallery_wrap {
+  background: aqua;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 50px 0;
+}
+#gallery_wrap .gallery {
+  width: 100px;
+  height: 100px;
+}
+#gallery_wrap .gallery img {
+  width: 100%;
+}
+#gallery_wrap .g5 {
+  width: 200px;
+  height: 200px;
+}
+
+#bnr_wrap {
+  text-align: center;
+  background-color: #222;
+  padding: 50px 0;
+}
+#bnr_wrap span {
+  color: #fff;
+}
+
+#card_wrap {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#card_wrap .card {
+  width: 22%;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 50px 0;
+  padding: 15px;
+  height: 450px;
+}
+#card_wrap .card .photo {
+  margin: 25px 15px;
+}
+#card_wrap .card h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#card_wrap .card p:nth-child(3) {
+  padding-bottom: 20px;
+}
+#card_wrap .card img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
