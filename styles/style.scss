@@ -22,6 +22,10 @@ $padding50:50px 0;
     justify-content: space-between;
     align-items: center;
 }
+@mixin flex-column-between {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;}
 // 실행
 #header_bg {
     background-color:$bg1_light;
@@ -95,24 +99,42 @@ $padding50:50px 0;
 #card_wrap {
     @include layout;
     @include flex-row-between;
+    padding:$padding50;
     .card {
-        width:22%;
-        background-color: #ccc;
+        width:23.5%;
+        background:$bg1_light;
         border-radius: 10px;
-        margin: 50px 0;
-        padding: 15px;
-        height: 450px;
-        .photo {
-            margin: 25px 15px;
-        }
-        h2 {
-            font-weight: 600;
-            margin-bottom: 20px
-            ;
-        }
-        p {}
-        p:nth-child(3) {padding-bottom: 20px;}
+        padding:30px 20px;
+        *{padding-bottom:20px; line-height: 1.3;}
+        .photo {    
             img {width: 100%;}
+        }
+        h2 {}
+        p:last-child {padding:0;}
     }
-
 }
+#qa_wrap {
+    @include layout;
+    margin-bottom: 50px;
+    h2 {
+        padding-bottom: 10px;
+        font-size: 1.375rem;
+    }
+    #qaFrm {
+        fieldset {
+            @include flex-column-between;
+            * {padding:10px; background: $bg1_light; border:0; margin-bottom: 10px;}
+            input[name$=id] {            
+                }
+            input[name$=number] {}
+            #user_qa {            
+                
+                height: 200px;
+                }
+            #qa_btn {            
+                background: $bg3_dark;
+                color:$font-color2-w;
+                margin:0;}
+        }//e:qa_wrap
+        }
+    }
